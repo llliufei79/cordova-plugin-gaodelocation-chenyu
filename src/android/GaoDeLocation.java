@@ -282,7 +282,8 @@ public class GaoDeLocation extends CordovaPlugin implements SingleLocaitonDelega
             //楼层
             json.put("floor", location.getFloor());
             //设备当前 GPS 状态
-            json.put("gpsAccuracyStatus", location.getGpsAccuracyStatus());
+            json.put("gpsAccuracyStatus", this.serialLocation.getgetGpsAccuracyStatusString(location.getGpsAccuracyStatus()));
+            json.put("gpsAccuracyStatus
             //定位来源
             json.put("locationType", location.getLocationType());
             //定位信息描述
