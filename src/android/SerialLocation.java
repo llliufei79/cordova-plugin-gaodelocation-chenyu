@@ -155,7 +155,7 @@ public class SerialLocation implements SerialLocationInterface{
      * @param statusCode GPS状态码
      * @return
      */
-    private String getGPSStatusString(int statusCode) {
+    public String getGPSStatusString(int statusCode) {
         String str = "";
         switch (statusCode) {
             case AMapLocationQualityReport.GPS_STATUS_OK:
